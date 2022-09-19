@@ -1,0 +1,21 @@
+sudo mongod --dbpath ~/data/db
+npm start
+
+
+//-------------------------------------------
+curl -d '{"name": "Long Tran","email": "abc","address": "vinh long","phone": "1234"}' http://127.0.0.1:3000/api/contacts
+
+curl --header "Content-Type: application/json" --request POST --data '{"name":"bao","email":"bao@gmail.com","favorite": true}' http://127.0.0.1:3000/api/contacts
+curl --header "Content-Type: application/json" --request POST --data '{"name":"abc","email":"abc@gmail.com"}' http://127.0.0.1:3000/api/contacts
+
+// test update
+curl --header "Content-Type: application/json" --request PUT --data '{"name":"duy","email":"duydntt@gmail.com"}' http://127.0.0.1:3000/api/contacts/631dcacd027533a0fec7a821
+
+//test delete
+curl --header "Content-Type: application/json" --request DELETE http://127.0.0.1:3000/api/contacts/631dcacd027533a0fec7a821
+
+//test find favorites
+curl http://127.0.0.1:3000/api/contacts/favorite
+
+//test deleteAll
+curl --header "Content-Type: application/json" --request DELETE http://127.0.0.1:3000/api/contacts/

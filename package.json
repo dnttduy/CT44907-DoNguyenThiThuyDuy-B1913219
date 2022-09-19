@@ -1,7 +1,6 @@
 {
   "name": "ptweb",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
@@ -15,5 +14,14 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnttduy/PTWeb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dnttduy/PTWeb/issues"
+  },
+  "homepage": "https://github.com/dnttduy/PTWeb#readme",
+  "description": ""
 }
